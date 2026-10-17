@@ -102,3 +102,4 @@ input.txt:focus{border-color:var(--red)}
 .skel{height:84px;border-radius:var(--r);background:linear-gradient(90deg,var(--card),var(--card2),var(--card));background-size:200% 100%;animation:sh 1.2s infinite}
 @keyframes sh{to{background-position:-200% 0}}
 .copied{color:var(--green);text-align:center;font-size:13px;margin-top:8px}
+.pill.lang{font-weight:700;color:var(--text);letter-spacing:.04em}
