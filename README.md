@@ -9,7 +9,7 @@ Daily social-deduction game. Ten short lines describe a secret word; nine author
 
 ## Deploy
 ```bash
-npx vercel --prod
+git push  # Vercel deploys main automatically
 ```
 Env vars (optional, defaults baked in): `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`.
 
