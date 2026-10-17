@@ -93,7 +93,7 @@ export default function Page() {
     if (!t) return;
     const marks = t.guesses.map(g => (g.correct ? "🟩" : "🟥")).join("") + (won && t.guesses.length === 1 ? "⬛" : "");
     const line = won ? (t.guesses.length === 1 ? d.shareWinFirst : d.shareWinSecond) : d.shareLose;
-    const txt = `Imposter Daily #${t.dayNumber} ${marks}\n${line}\n${d.shareStreak}: ${t.stats?.streak ?? 0}\n${location.origin}`;
+    const txt = `Imposter Daily #${t.dayNumber} ${marks}\n${line}\n${d.shareStreak}: ${t.stats?.streak ?? 0}\nimposterdaily.com`;
     if (navigator.share) navigator.share({ text: txt }).catch(() => {});
     else navigator.clipboard?.writeText(txt).then(() => { setCopied(true); setTimeout(() => setCopied(false), 1800); });
   }

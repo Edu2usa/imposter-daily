@@ -1,1 +1,21 @@
-{ "crons": [{ "path": "/api/cron", "schedule": "55 23 * * *" }] }
+{
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "55 23 * * *"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "(imposter-daily|turbo-magenta-7nn896t|temporary-turbo-magenta-7nn896t)\\.vercel\\.app"
+        }
+      ],
+      "destination": "https://imposterdaily.com/:path*",
+      "permanent": true
+    }
+  ]
+}
